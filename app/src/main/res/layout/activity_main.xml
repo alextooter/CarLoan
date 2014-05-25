@@ -1,0 +1,325 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/bigLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textCarPrice"
+            android:textAlignment="center"
+            android:text="@string/car_price"/>
+
+        <EditText
+            android:id="@+id/editTextCarPrice"
+            android:inputType="numberDecimal"
+            android:hint="@string/car_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="@string/car_real_price"/>
+
+        <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextCarRealPrice"
+        android:hint="@string/car_real_price"
+        android:singleLine="true" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textCarType"
+            android:text="@string/car_type"/>
+
+        <!--
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/editCarType"
+            android:hint="@string/car_type"
+            android:inputType="numberDecimal" />
+        -->
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/spinnerCarType"
+            android:hint="@string/car_type"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textDownPercent"
+            android:text="@string/down_percent"/>
+
+        <!--
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/editDownPercent"
+            android:hint="@string/down_percent"
+            android:inputType="numberDecimal" />
+            -->
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerDownPercent">
+
+            </Spinner>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textDownPayment"
+            android:text="@string/down_payment"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:editable="false"
+            android:id="@+id/editDownPayment"
+            android:hint="@string/down_payment"
+            android:inputType="none" />
+        </LinearLayout>
+
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textLoanYear"
+            android:text="@string/loan_year"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/editLoanYear"
+            android:hint="@string/loan_year"
+            android:inputType="numberDecimal" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textLoan"
+            android:text="@string/loan"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:editable="false"
+            android:id="@+id/editLoan"
+            android:hint="@string/loan"
+            android:inputType="none"
+            android:enabled="false" />
+        </LinearLayout>
+
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textBuyTax"
+            android:text="@string/buy_tax"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:editable="false"
+            android:id="@+id/editBuyTax"
+            android:hint="@string/buy_tax"
+            android:inputType="none"
+            android:enabled="false" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textInsurance"
+            android:text="@string/insurance"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/editInsurance"
+            android:hint="@string/insurance"
+            android:inputType="numberDecimal" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textPDI"
+            android:text="@string/PDI"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/editPDI"
+            android:hint="@string/PDI"
+            android:inputType="numberDecimal" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textMangerFee"
+            android:text="@string/manager_fee"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:editable="false"
+            android:id="@+id/editManagerFee"
+            android:hint="@string/manager_fee"
+            android:inputType="none"
+            android:enabled="false" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textTotalFirstPay"
+            android:text="@string/total_first_pay"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:editable="false"
+            android:id="@+id/editTotalFirstPay"
+            android:hint="@string/total_first_pay"
+            android:inputType="none"
+            android:enabled="false"
+            android:textColor="#ffff0856" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textMonthPay"
+            android:text="@string/month_pay"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:editable="false"
+            android:id="@+id/editMonthPay"
+            android:hint="@string/month_pay"
+            android:inputType="none"
+            android:enabled="false"
+            android:textColor="#ffff0856" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/buttonClear"
+            android:layout_marginLeft="180dp"
+            />
+        <Button
+            android:text="@string/calc_all"
+            android:id="@+id/buttonCalc"
+            android:layout_marginRight="53dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

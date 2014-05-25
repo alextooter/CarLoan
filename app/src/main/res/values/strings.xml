@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CarLoan</string>
+    <string name="action_settings">Settings</string>
+    <string name="car_price">车型总价</string>
+    <string name="car_real_price">实际售价</string>
+    <string name="car_type">车型</string>
+
+    <string name="down_percent">首付比例</string>
+    <string name="down_payment">车款首付</string>
+
+    <string name="loan_year">贷款年限</string>
+    <string name="loan">贷款金额</string>
+
+    <string name="buy_tax">购置税</string>
+    <string name="insurance">保险</string>
+
+    <string name="PDI">PDI</string>
+    <string name="manager_fee">管理费</string>
+    <string name="total_first_pay">首付金额</string>
+    <string name="month_pay">月供</string>
+    <string name="calc_all">计算</string>
+    <string name="clear">清空数据</string>
+
+</resources>
